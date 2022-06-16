@@ -5,6 +5,9 @@ html, body, header {
     padding: 0;
   }
   
+  *{
+    outline:none;
+  }
   h1, h2, h3, h4, h5, h6 {
       text-align: center;
   }
@@ -529,3 +532,76 @@ html, body, header {
   .t-select-btn:active {
     background-color: #F1F1F1;
   }
+
+
+.cover2{
+    display: none;
+}
+
+
+.dateFrom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input[type="date"]{
+    width: auto;
+    border: 0;
+}
+
+input[type="submit"]{
+    background: #7e7eff;
+    color: white;
+    font-size: 3vh;
+}
+
+
+
+.dF1{
+    color: black !important;
+    margin-bottom: 0;
+    margin-right: 10vw;
+}
+
+
+/* ------------------------------------------------------------------------*/
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+
+    .cover1{
+        display: none;
+    }
+
+    .cover2{
+        display: block;
+    }
+  
+    .flex-form{
+        display: grid;
+    }
+
+    .container{
+        margin-top: 5vh;
+    }
+
+    .jumbotron{
+        height: 100vh;
+    }
+
+    input{
+        width: auto;
+    }
+
+    select{
+        height: 7vh;
+    }
+
+
+}
